@@ -1,23 +1,37 @@
 * {
   margin-left: 0cm;
   margin-right: 0cm;
-  padding: 0cm;
+  padding: cm;
   box-sizing: border-box;
   font-size: small;
 }
 .order-container {
   margin-left: 25%;
-  height: 100vh;
-  width: 75vh;
-  border: 2px solid black;
+  height: fit-content;
+  width: 80vh;
+  border: 1px solid black;
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: (4, 1fr);
+  grid-template-columns: (4, 1fr);
+}
+
+.left {
+  float: left;
+  position: relative;
+}
+
+.right {
+  float: right;
+  position: relative;
+}
+
+.newline {
+  clear: both;
 }
 
 .orderbox {
   background-color: darkgray;
-  border: 2px solid black;
+  border: 1px solid black;
   padding: 20;
 }
 
@@ -48,6 +62,7 @@
 .box-7 {
   grid-column: 1;
   text-align: center;
+  height: auto;
 }
 .box-8 {
   grid-column: 2;
